@@ -44,7 +44,7 @@
   swapDevices = [ {
     device = "/var/lib/swapfile";
     size = 16*1024;
-  } ]; 
+  } ];
 
   services = {
     # Enable the KDE Plasma Desktop Environment.
@@ -117,13 +117,17 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    git
     vim
     wget
-    git
-    ungoogled-chromium
+
     nixd
     vscode
-    vscode-extensions.jnoortheen.nix-ide
+
+    ungoogled-chromium
+
+    carla
+    lsp-plugins
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
