@@ -121,6 +121,8 @@
     vim
     wget
 
+    ntfs3g
+
     nixd
     vscode
 
