@@ -122,6 +122,7 @@
     wget
     curl
     rustup
+    gcc
 
     ntfs3g
 
