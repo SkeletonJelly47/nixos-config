@@ -121,6 +121,7 @@
     vim
     wget
     curl
+    rustup
 
     ntfs3g
 
