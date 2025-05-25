@@ -13,18 +13,20 @@
     let 
       lib = nixpkgs.lib;
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
     in {
       nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
-        modules = [ ./configuration.nix ];
-    };
+        modules = [ 
+          ./hosts/default/configuration.nix
 
-    homeConfigurations = {
-      mikko5 = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [ ./home.nix ];
-      };
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+
+            home-manager.users.mikko5 = import ./hosts/default/home.nix;
+          }
+        ];
     };
   };
 }

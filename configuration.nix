@@ -2,17 +2,15 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
+  imports = [
       ./hardware-configuration.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Bootloader.
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "nodev";
   boot.loader.grub.useOSProber = true;
@@ -21,10 +19,6 @@
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -47,17 +41,12 @@
     LC_TIME = "fi_FI.UTF-8";
   };
 
-
   swapDevices = [ {
     device = "/var/lib/swapfile";
     size = 16*1024;
   } ]; 
 
   services = {
-    # Enable the X11 windowing system.
-    # You can disable this if you're only using the Wayland session.
-    # xserver.enable = true;
-
     # Enable the KDE Plasma Desktop Environment.
     desktopManager.plasma6.enable = true;
     displayManager.sddm.enable = true;
@@ -85,7 +74,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
+    jack.enable = true;
 
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
@@ -121,6 +110,9 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  # Nixos 22.05 can turn on native wayland support in all chrome and most electron apps
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
