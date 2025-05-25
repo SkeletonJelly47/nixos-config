@@ -17,14 +17,14 @@
       nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
         modules = [ 
-          ./hosts/default/configuration.nix
+          ./configuration.nix
 
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
-            home-manager.users.mikko5 = import ./hosts/default/home.nix;
+            home-manager.users.mikko5 = import ./home.nix;
           }
         ];
     };
