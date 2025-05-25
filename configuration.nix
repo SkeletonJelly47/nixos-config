@@ -120,6 +120,7 @@
     git
     vim
     wget
+    curl
 
     ntfs3g
 
