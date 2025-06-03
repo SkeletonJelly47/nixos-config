@@ -123,6 +123,7 @@
     curl
     rustup
     gcc
+    ripgrep
 
     ntfs3g
 
