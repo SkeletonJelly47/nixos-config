@@ -127,7 +127,12 @@
     ntfs3g
 
     nixd
-    vscode
+
+    (vscode-with-extensions.override {
+      vscodeExtensions = with vscode-extensions; [
+        jnoortheen.nix-ide
+      ];
+    })
 
     ungoogled-chromium
 
