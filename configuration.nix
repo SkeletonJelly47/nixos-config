@@ -133,6 +133,9 @@
       ];
     })
 
+    texliveFull
+    texstudio
+
     ungoogled-chromium
 
     carla
