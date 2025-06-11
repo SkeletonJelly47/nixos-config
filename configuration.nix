@@ -65,6 +65,39 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  hardware = {
+    graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
+
+    opengl = {
+      enable = true;
+      driSupport32Bit = true;
+    };
+
+    nvidia = {
+      open = false;
+      videoAcceleration = true;
+      nvidiaSettings = true;
+      modesetting.enable = true;
+    };
+  };
+
+  services.xserver.videoDrivers = [ "nvidia" ];
+
+  # hardware.opengl = {
+  #   enable = true;
+  #   driSupport32Bit = true;
+  # };
+
+  # hardware.nvidia = {
+  #   open = false;
+  #   videoAcceleration = true;
+  #   nvidiaSettings = true;
+  #   modesetting.enable = true;
+  # };
+
   # Enable sound with pipewire.
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -88,14 +121,17 @@
   users.users.mikko5 = {
     isNormalUser = true;
     description = "mikko5";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "gamemode" ];
     packages = with pkgs; [
       discord
       obsidian
+      spotify
     ];
   };
 
   programs = {
+    gamemode.enable = true;
+
     steam = {
       enable = true;
     };
@@ -122,6 +158,7 @@
     rustup
     gcc
     ripgrep
+    btop
 
     ntfs3g
 
