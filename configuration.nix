@@ -71,11 +71,6 @@
       enable32Bit = true;
     };
 
-    opengl = {
-      enable = true;
-      driSupport32Bit = true;
-    };
-
     nvidia = {
       open = false;
       videoAcceleration = true;
@@ -85,18 +80,6 @@
   };
 
   services.xserver.videoDrivers = [ "nvidia" ];
-
-  # hardware.opengl = {
-  #   enable = true;
-  #   driSupport32Bit = true;
-  # };
-
-  # hardware.nvidia = {
-  #   open = false;
-  #   videoAcceleration = true;
-  #   nvidiaSettings = true;
-  #   modesetting.enable = true;
-  # };
 
   # Enable sound with pipewire.
   hardware.pulseaudio.enable = false;
