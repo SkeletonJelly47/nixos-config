@@ -7,17 +7,24 @@
 
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    yeetmouse = {
+      url = "github:AndyFilter/YeetMouse?dir=nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
-  
-  outputs = { self, nixpkgs, home-manager, ... }:
-    let 
+
+  outputs = { self, nixpkgs, home-manager, yeetmouse, ... }:
+    let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
     in {
       nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
-        modules = [ 
+        modules = [
           ./configuration.nix
+
+          yeetmouse.nixosModules.default
 
           home-manager.nixosModules.home-manager
           {

@@ -40,7 +40,30 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "yeetmouse": "yeetmouse"
+      }
+    },
+    "yeetmouse": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nix",
+        "lastModified": 1748334374,
+        "narHash": "sha256-StsLdBT/+7GKlA4bdWUrFdsbPbI++0rb+2Jk/THzPx4=",
+        "owner": "AndyFilter",
+        "repo": "YeetMouse",
+        "rev": "135c452bd2db0022f6f3845bb2c71bf51ddf2e37",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nix",
+        "owner": "AndyFilter",
+        "repo": "YeetMouse",
+        "type": "github"
       }
     }
   },

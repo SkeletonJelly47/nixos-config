@@ -2,12 +2,13 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
-      ./hardware-configuration.nix
-    ];
+    ./hardware-configuration.nix
+    ./yeetmouse.nix
+  ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -82,7 +83,7 @@
   services.xserver.videoDrivers = [ "nvidia" ];
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -160,6 +161,9 @@
 
     carla
     lsp-plugins
+
+    wineWowPackages.stable
+    winetricks
   ];
 
   # LSP-Plugins workaround(?) https://discourse.nixos.org/t/lmms-vst-plugins/42985/3
