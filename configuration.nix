@@ -143,6 +143,7 @@
     gcc
     ripgrep
     btop
+    gparted
 
     ntfs3g
 
