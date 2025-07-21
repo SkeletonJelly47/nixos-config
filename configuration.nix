@@ -173,6 +173,7 @@
     musikcube
 
     ffmpeg
+    vlc
   ];
 
   # LSP-Plugins workaround(?) https://discourse.nixos.org/t/lmms-vst-plugins/42985/3
