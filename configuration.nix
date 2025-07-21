@@ -8,6 +8,7 @@
   imports = [
     ./hardware-configuration.nix
     ./yeetmouse.nix
+    ./obs-studio.nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -169,6 +170,8 @@
     lutris
 
     musikcube
+
+    ffmpeg
   ];
 
   # LSP-Plugins workaround(?) https://discourse.nixos.org/t/lmms-vst-plugins/42985/3
