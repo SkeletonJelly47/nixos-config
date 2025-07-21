@@ -9,6 +9,7 @@
     ./hardware-configuration.nix
     ./yeetmouse.nix
     ./obs-studio.nix
+    ./retroarch.nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
