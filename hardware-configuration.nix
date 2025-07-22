@@ -13,16 +13,48 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" =
-    { device = "/dev/disk/by-uuid/9fe3c2a4-f05f-4196-a21f-5f0bb49d8cb4";
+  fileSystems = {
+    "/" = {
+      device = "/dev/disk/by-uuid/9fe3c2a4-f05f-4196-a21f-5f0bb49d8cb4";
       fsType = "ext4";
     };
 
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/50F1-D2B4";
+    "/boot" = { device = "/dev/disk/by-uuid/50F1-D2B4";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
+
+    "/mnt/arch" = {
+      device = "/dev/disk/by-uuid/2151f8fb-4cae-4f84-abad-f9137eabda1f";
+      fsType = "ext4";
+      options = [
+        "users" # Allows any user to mount and unmount
+        "nofail" # Prevent system from failing if this drive doesn't mount
+        "exec" # Permit execution of binaries and other executable files
+      ];
+    };
+
+    "/mnt/bravo" = {
+      device = "/dev/disk/by-uuid/db9f754a-e61c-4250-bf93-f58d0d8bc8ec";
+      fsType = "ext4";
+      options = [
+        "users"
+        "nofail"
+        "exec"
+      ];
+    };
+  };
+
+  # fileSystems."/" =
+  #   { device = "/dev/disk/by-uuid/9fe3c2a4-f05f-4196-a21f-5f0bb49d8cb4";
+  #     fsType = "ext4";
+  #   };
+
+  # fileSystems."/boot" =
+  #   { device = "/dev/disk/by-uuid/50F1-D2B4";
+  #     fsType = "vfat";
+  #     options = [ "fmask=0077" "dmask=0077" ];
+  #   };
 
   swapDevices = [ ];
 
