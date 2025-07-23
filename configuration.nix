@@ -80,7 +80,11 @@
       nvidiaSettings = true;
       modesetting.enable = true;
     };
+
+    bluetooth.enable = true;
   };
+
+  services.blueman.enable = true;
 
   services.xserver.videoDrivers = [ "nvidia" ];
 
@@ -92,7 +96,6 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
     jack.enable = true;
 
     # use the example session manager (no others are packaged yet so this is enabled by default,
@@ -138,6 +141,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     git
+    git-lfs
     vim
     wget
     curl
