@@ -165,6 +165,7 @@
     texstudio
 
     ungoogled-chromium
+    firefox
 
     carla
     lsp-plugins
