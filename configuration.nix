@@ -188,6 +188,7 @@
     musikcube
 
     ffmpeg
+    losslesscut-bin
     vlc
 
     gimp3
