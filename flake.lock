@@ -52,11 +52,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1757274882,
-        "narHash": "sha256-2x0llRk1iz+6qPHtHb1bdKDYc4oIu3llO/8GomhGKLk=",
+        "lastModified": 1753010267,
+        "narHash": "sha256-H0mbEMpWFMicXGgQLZUA/QE4zD1HrRXQNdU6YE5M6Pk=",
         "owner": "AndyFilter",
         "repo": "YeetMouse",
-        "rev": "b73a993843bba75cb48ba7eb677ac926cd180e13",
+        "rev": "a7986ffbd52eb55b5c532a0f89b8dd437ed1fc71",
         "type": "github"
       },
       "original": {
