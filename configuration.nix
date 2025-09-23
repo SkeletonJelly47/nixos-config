@@ -232,7 +232,7 @@
   services.fail2ban = {
     enable = true;
 
-    maxretry = 2;
+    maxretry = 1;
     bantime = "24h"; # Ban IPs for one day on the first ban
     bantime-increment = {
       enable = true; # Enable increment of bantime after each violation
