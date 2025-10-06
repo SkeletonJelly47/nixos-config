@@ -184,6 +184,7 @@
     winetricks
 
     lutris
+    heroic
 
     musikcube
 
