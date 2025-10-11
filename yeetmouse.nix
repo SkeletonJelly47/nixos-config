@@ -1,5 +1,3 @@
-{ ... }:
-
 {
   hardware.yeetmouse = {
     enable = true;
