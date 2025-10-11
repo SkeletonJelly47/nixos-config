@@ -16,13 +16,14 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, yeetmouse, ... }:
+  outputs = { self, nixpkgs, home-manager, yeetmouse, ... } @inputs:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
     in {
       nixosConfigurations.nixos = lib.nixosSystem {
         inherit system;
+        specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix
 
