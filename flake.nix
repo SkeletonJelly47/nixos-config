@@ -16,27 +16,33 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, yeetmouse, ... } @inputs:
-    let
-      lib = nixpkgs.lib;
-      system = "x86_64-linux";
-    in {
-      nixosConfigurations.nixos = lib.nixosSystem {
-        inherit system;
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./configuration.nix
+  outputs = {
+    self,
+    nixpkgs,
+    home-manager,
+    yeetmouse,
+    ...
+  } @inputs: let
+  inherit (self) outputs;
+    lib = nixpkgs.lib;
+    system = "x86_64-linux";
+  in {
+    nixosConfigurations.nixos = lib.nixosSystem {
+      inherit system;
+      specialArgs = { inherit inputs outputs; };
+      modules = [
+        ./configuration.nix
 
-          yeetmouse.nixosModules.default
+        yeetmouse.nixosModules.default
 
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
 
-            home-manager.users.mikko5 = import ./home.nix;
-          }
-        ];
+          home-manager.users.mikko5 = import ./home.nix;
+        }
+      ];
     };
   };
 }
