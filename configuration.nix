@@ -113,11 +113,6 @@
     isNormalUser = true;
     description = "mikko5";
     extraGroups = [ "networkmanager" "wheel" "gamemode" ];
-    packages = with pkgs; [
-      discord
-      obsidian
-      spotify
-    ];
   };
 
   programs = {
@@ -163,9 +158,6 @@
       ];
     })
 
-    texliveFull
-    texstudio
-
     ungoogled-chromium
     firefox
 
@@ -178,13 +170,8 @@
     lutris
     heroic
 
-    musikcube
-
     ffmpeg
-    losslesscut-bin
     vlc
-
-    gimp3
   ];
 
   # LSP-Plugins workaround(?) https://discourse.nixos.org/t/lmms-vst-plugins/42985/3
