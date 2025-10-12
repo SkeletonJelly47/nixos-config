@@ -1,6 +1,10 @@
-{ pkgs, config, lib, inputs, ... }:
-
 {
+  pkgs,
+  config,
+  lib,
+  inputs,
+  ...
+}: {
   imports = [
     ./hardware-configuration.nix
     ./yeetmouse.nix
@@ -8,7 +12,7 @@
     ./retroarch.nix
   ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "nodev";
@@ -40,10 +44,12 @@
     LC_TIME = "fi_FI.UTF-8";
   };
 
-  swapDevices = [ {
-    device = "/var/lib/swapfile";
-    size = 16*1024;
-  } ];
+  swapDevices = [
+    {
+      device = "/var/lib/swapfile";
+      size = 16 * 1024;
+    }
+  ];
 
   services = {
     # Enable the KDE Plasma Desktop Environment.
@@ -92,7 +98,7 @@
 
   services.blueman.enable = true;
 
-  services.xserver.videoDrivers = [ "nvidia" ];
+  services.xserver.videoDrivers = ["nvidia"];
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
@@ -112,7 +118,7 @@
   users.users.mikko5 = {
     isNormalUser = true;
     description = "mikko5";
-    extraGroups = [ "networkmanager" "wheel" "gamemode" ];
+    extraGroups = ["networkmanager" "wheel" "gamemode"];
   };
 
   programs = {
@@ -175,27 +181,25 @@
     vlc
   ];
 
-  nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+  nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
 
   # LSP-Plugins workaround(?) https://discourse.nixos.org/t/lmms-vst-plugins/42985/3
-  environment.variables =
-    let
-      makePluginPath = format:
-        (lib.makeSearchPath format [
-          "$HOME/.nix-profile/lib"
-          "/run/current-system/sw/lib"
-          "/etc/profiles/per-user/$USER/lib"
-        ])
-        + ":$HOME/.${format}";
-    in
-    {
-      DSSI_PATH = makePluginPath "dssi";
-      LADSPA_PATH = makePluginPath "ladspa";
-      LV2_PATH = makePluginPath "lv2";
-      LXVST_PATH = makePluginPath "lxvst";
-      VST_PATH = makePluginPath "vst";
-      VST3_PATH = makePluginPath "vst3";
-    };
+  environment.variables = let
+    makePluginPath = format:
+      (lib.makeSearchPath format [
+        "$HOME/.nix-profile/lib"
+        "/run/current-system/sw/lib"
+        "/etc/profiles/per-user/$USER/lib"
+      ])
+      + ":$HOME/.${format}";
+  in {
+    DSSI_PATH = makePluginPath "dssi";
+    LADSPA_PATH = makePluginPath "ladspa";
+    LV2_PATH = makePluginPath "lv2";
+    LXVST_PATH = makePluginPath "lxvst";
+    VST_PATH = makePluginPath "vst";
+    VST3_PATH = makePluginPath "vst3";
+  };
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
@@ -205,9 +209,9 @@
 
     # Open ports in the firewall.
     # allowedTCPPorts = [ ... ];
-    allowedUDPPortRanges =
-    [
-      { # BG3 Ports for direct connect
+    allowedUDPPortRanges = [
+      {
+        # BG3 Ports for direct connect
         from = 23243;
         to = 23262;
       }
@@ -246,5 +250,4 @@
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
   system.stateVersion = "25.05"; # Did you read the comment?
-
 }

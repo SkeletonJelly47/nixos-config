@@ -22,14 +22,14 @@
     home-manager,
     yeetmouse,
     ...
-  } @inputs: let
-  inherit (self) outputs;
+  } @ inputs: let
+    inherit (self) outputs;
     lib = nixpkgs.lib;
     system = "x86_64-linux";
   in {
     nixosConfigurations.nixos = lib.nixosSystem {
       inherit system;
-      specialArgs = { inherit inputs outputs; };
+      specialArgs = {inherit inputs outputs;};
       modules = [
         ./configuration.nix
 
