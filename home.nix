@@ -19,20 +19,20 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
+  home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
-    pkgs.hello
+    hello
 
-    pkgs.discord
-    pkgs.obsidian
-    pkgs.spotify
+    discord
+    obsidian
+    spotify
 
-    pkgs.losslesscut-bin
-    pkgs.musikcube
-    pkgs.gimp
-    pkgs.texliveFull
-    pkgs.texstudio
+    losslesscut-bin
+    musikcube
+    gimp
+    texliveFull
+    texstudio
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
