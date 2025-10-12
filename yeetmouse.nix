@@ -8,10 +8,10 @@
     #   y = 0.50582;
     # };
 
-    mode.power = {
-      acceleration = 1.2;
-      exponent = 0.2;
-    };
+    # mode.power = {
+    #   acceleration = 1.2;
+    #   exponent = 0.2;
+    # };
 
     # mode.classic = {
     #   acceleration = 0.033;

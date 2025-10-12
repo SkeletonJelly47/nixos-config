@@ -37,26 +37,43 @@
         "type": "github"
       }
     },
+    "nixpkgs-unstable": {
+      "locked": {
+        "lastModified": 1760038930,
+        "narHash": "sha256-Oncbh0UmHjSlxO7ErQDM3KM0A5/Znfofj2BSzlHLeVw=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "0b4defa2584313f3b781240b29d61f6f9f7e0df3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
+        "nixpkgs-unstable": "nixpkgs-unstable",
         "yeetmouse": "yeetmouse"
       }
     },
     "yeetmouse": {
       "inputs": {
         "nixpkgs": [
-          "nixpkgs"
+          "nixpkgs-unstable"
         ]
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1753010267,
-        "narHash": "sha256-H0mbEMpWFMicXGgQLZUA/QE4zD1HrRXQNdU6YE5M6Pk=",
+        "lastModified": 1760192668,
+        "narHash": "sha256-OxVPXHWQ1j4SyP3tQ2909VIXTdw3OkW33ScG1dM2JB8=",
         "owner": "AndyFilter",
         "repo": "YeetMouse",
-        "rev": "a7986ffbd52eb55b5c532a0f89b8dd437ed1fc71",
+        "rev": "24aa4bc4e5f51ad869f667acd35e46a5336e6abf",
         "type": "github"
       },
       "original": {
