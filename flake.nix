@@ -13,7 +13,7 @@
 
     yeetmouse = {
       url = "github:AndyFilter/YeetMouse?dir=nix";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
