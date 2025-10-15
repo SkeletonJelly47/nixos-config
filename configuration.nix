@@ -70,6 +70,8 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  boot.kernelParams = ["nvidia.NVreg_PreserveVideoMemoryAllocations=1"];
+
   hardware = {
     graphics = {
       enable = true;
