@@ -6,6 +6,7 @@
     mode.classic = {
       acceleration = 0.033;
       exponent = 3.36;
+      useSmoothing = false;
     };
   };
 }
