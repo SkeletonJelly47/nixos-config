@@ -30,7 +30,11 @@
 
     losslesscut-bin
     musikcube
+
     gimp
+    pinta
+    krita
+
     texliveFull
     texstudio
   ];
