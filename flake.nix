@@ -20,6 +20,7 @@
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-unstable,
     home-manager,
     yeetmouse,
     ...
@@ -32,6 +33,17 @@
       inherit system;
       specialArgs = {inherit inputs outputs;};
       modules = [
+        {
+          nixpkgs.overlays = [
+            (final: prev: {
+              unstable = import nixpkgs-unstable {
+                inherit prev;
+                system = prev.system;
+                config.allowUnfree = true;
+              };
+            })
+          ];
+        }
         ./configuration.nix
 
         yeetmouse.nixosModules.default
