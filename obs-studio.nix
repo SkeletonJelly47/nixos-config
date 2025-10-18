@@ -8,8 +8,7 @@
         cudaSupport = true;
       }
     );
-
-    plugins = with pkgs.obs-studio-plugins; [
+    plugins = with pkgs.unstable.obs-studio-plugins; [
       input-overlay
     ];
   };
