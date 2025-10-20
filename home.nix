@@ -8,7 +8,7 @@
 
   home.packages = with pkgs; [
     discord
-    obsidian
+    unstable.obsidian
     spotify
 
     losslesscut-bin
