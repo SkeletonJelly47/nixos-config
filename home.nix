@@ -9,7 +9,7 @@
   home.packages = with pkgs; [
     discord
     unstable.obsidian
-    spotify
+    tidal-hifi
 
     losslesscut-bin
     musikcube
