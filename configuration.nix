@@ -128,6 +128,7 @@
 
     steam = {
       enable = true;
+      gamescopeSession.enable = true;
     };
 
     nix-ld = {
