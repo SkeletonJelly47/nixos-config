@@ -9,7 +9,7 @@
       }
     );
     plugins = with pkgs.obs-studio-plugins; [
-      input-overlay
+      droidcam-obs
     ];
   };
 }
