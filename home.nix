@@ -9,10 +9,13 @@
   home.packages = with pkgs; [
     discord
     unstable.obsidian
+
     tidal-hifi
+    musikcube
+    fooyin
 
     losslesscut-bin
-    musikcube
+    shotcut
 
     gimp
     pinta
