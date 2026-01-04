@@ -103,6 +103,10 @@
     bluetooth.enable = true;
   };
 
+  fonts.packages = with pkgs; [
+    noto-fonts-cjk-sans
+  ];
+
   services.blueman.enable = true;
 
   services.xserver.videoDrivers = ["nvidia"];
