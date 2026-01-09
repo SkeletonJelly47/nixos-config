@@ -144,6 +144,11 @@
       enable = true;
       # libraries = with pkgs [ ];
     };
+
+    vim = {
+      enable = true;
+      defaultEditor = true;
+    };
   };
 
   # Allow unfree packages
@@ -168,6 +173,7 @@
 
     ntfs3g
 
+    nix-inspect
     nixd
     alejandra
 
