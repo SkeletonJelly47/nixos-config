@@ -4,7 +4,11 @@
   lib,
   inputs,
   ...
-}: {
+}:
+let
+  projectplus = import ./projectplus.nix { inherit pkgs; };
+in
+ {
   imports = [
     ./hardware-configuration.nix
     ./yeetmouse.nix
@@ -194,9 +198,12 @@
 
     lutris
     heroic
+    bottles
 
     ffmpeg
     vlc
+
+    # projectplus
   ];
 
   nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
