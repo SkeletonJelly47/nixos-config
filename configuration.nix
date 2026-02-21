@@ -193,7 +193,7 @@ in
     carla
     lsp-plugins
 
-    wineWowPackages.stable
+    wineWowPackages.staging
     winetricks
 
     lutris
