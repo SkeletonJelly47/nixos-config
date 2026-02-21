@@ -156,6 +156,11 @@ in
       enable = true;
       defaultEditor = true;
     };
+
+    appimage = {
+      enable = true;
+      binfmt = true;
+    };
   };
 
   # Allow unfree packages
