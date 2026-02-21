@@ -129,11 +129,14 @@ in
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  # Docker for Heaper
+  virtualisation.docker.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mikko5 = {
     isNormalUser = true;
     description = "mikko5";
-    extraGroups = ["networkmanager" "wheel" "gamemode"];
+    extraGroups = ["networkmanager" "wheel" "gamemode" "docker"];
   };
 
   programs = {
