@@ -8,9 +8,9 @@
         cudaSupport = true;
       }
     );
-    plugins = with pkgs.unstable.obs-studio-plugins; [
+    # plugins = with pkgs.unstable.obs-studio-plugins; [
       # Revert when this is merged https://github.com/NixOS/nixpkgs/pull/469141
-      droidcam-obs
+      # droidcam-obs
 
       # (droidcam-obs.overrideAttrs (_finalAttrs: {
       #   # ignore finalAttrs to avoid having to remove ffmpeg 7
@@ -32,6 +32,6 @@
       #     "LIBIMOBILEDEV=libimobiledevice-1.0"
       #   ];
       # }))
-    ];
+    # ];
   };
 }
