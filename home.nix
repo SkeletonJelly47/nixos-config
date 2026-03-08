@@ -27,6 +27,7 @@
 
     yt-dlp
     kdePackages.kcalc
+    kdePackages.kclock
 
     freecad
 
