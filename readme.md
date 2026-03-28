@@ -1,7 +1,12 @@
-# Stuff to define in config
+# TODO
 
-* [Plasma Screen lock preferences](https://github.com/nix-community/plasma-manager)
-* musikcube library directory
-* Carla / pipewire setup
-* Chromium bookmarks
-* [Chromium extensions](https://github.com/nix-community/home-manager/issues/2585)
+- [x] Flake parts initial setup
+- [ ] [Plasma Screen lock preferences](https://github.com/nix-community/plasma-manager)
+- [x] Carla
+- [ ] pipewire setup
+- [ ] Chromium bookmarks
+- [ ] [Chromium extensions](https://github.com/nix-community/home-manager/issues/2585)
+- [ ] Projectplus appimage as package
+- [ ] Fix yeetmouse Y sens multiplier
+- [ ] juiced up terminal
+- [ ] lazygit (or other client)
