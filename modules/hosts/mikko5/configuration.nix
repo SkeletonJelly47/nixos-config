@@ -239,7 +239,7 @@
       kdePackages.kcalc
       kdePackages.kclock
 
-      freecad # env QT_QPA_PLATFORM=xcb
+      freecad # env QT_QPA_PLATFORM=xcb (no longer needed, was a problem on 1.0.2)
 
       unstable.archipelago
       poptracker
