@@ -252,6 +252,8 @@
       unstable.orca-slicer
 
       jetbrains.rust-rover
+
+      linuxKernel.packages.linux_xanmod.cpupower
     ];
 
     nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
