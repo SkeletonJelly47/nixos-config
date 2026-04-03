@@ -13,6 +13,8 @@
           })
         ];
       }
+
+      inputs.yeetmouse.nixosModules.default
     ];
   };
 }

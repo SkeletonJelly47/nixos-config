@@ -3,7 +3,7 @@
     imports = [
       self.nixosModules.mikko5Hardware
 
-      # ../yeetmouse.nix
+      self.nixosModules.yeetmouse
       # ../obs-studio.nix
       # ../retroarch.nix
 
