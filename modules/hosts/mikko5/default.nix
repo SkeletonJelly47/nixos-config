@@ -2,6 +2,7 @@
   flake.nixosConfigurations.mikko5 = inputs.nixpkgs.lib.nixosSystem {
     modules = [
       self.nixosModules.mikko5Configuration
+
       {
         nixpkgs.overlays = [
           (final: prev: {
@@ -15,6 +16,8 @@
       }
 
       inputs.yeetmouse.nixosModules.default
+
+      self.nixosModules.minecraft
     ];
   };
 }
