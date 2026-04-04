@@ -18,6 +18,7 @@
       inputs.yeetmouse.nixosModules.default
 
       self.nixosModules.minecraft
+      self.nixosModules.obs-studio
     ];
   };
 }
