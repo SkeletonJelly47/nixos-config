@@ -21,6 +21,7 @@
       self.nixosModules.obs-studio
       self.nixosModules.shellAlias
       self.nixosModules.tablet
+      self.nixosModules.transcribe
     ];
   };
 }
