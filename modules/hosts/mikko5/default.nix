@@ -20,6 +20,7 @@
       self.nixosModules.minecraft
       self.nixosModules.obs-studio
       self.nixosModules.shellAlias
+      self.nixosModules.tablet
     ];
   };
 }
