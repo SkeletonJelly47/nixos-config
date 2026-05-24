@@ -81,6 +81,7 @@
     boot = {
       kernelParams = ["nvidia.NVreg_PreserveVideoMemoryAllocations=1"];
       kernelModules = [ "v4l2loopback"];
+      kernelPackages = pkgs.linuxPackages_6_18;
     };
 
     hardware = {
