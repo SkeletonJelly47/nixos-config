@@ -266,6 +266,7 @@
       # }))
 
       jetbrains.rust-rover
+      devenv
 
       linuxKernel.packages.linux_xanmod.cpupower
     ];
