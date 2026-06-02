@@ -21,6 +21,7 @@
     ];
 
     nix.settings.experimental-features = ["nix-command" "flakes"];
+    nix.settings.trusted-users = [ "root" "mikko5" ];
 
     boot.loader.grub.enable = true;
     boot.loader.grub.device = "nodev";
