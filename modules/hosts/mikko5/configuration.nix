@@ -98,7 +98,7 @@
         modesetting.enable = true;
         powerManagement.enable = false;
         powerManagement.finegrained = false;
-        package = config.boot.kernelPackages.nvidiaPackages.stable;
+        package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
 
         # package = config.boot.kernelPackages.nvidiaPackages.mkDriver {
         #   version = "575.64.05";
@@ -208,7 +208,7 @@
       carla
       lsp-plugins
 
-      wineWowPackages.staging
+      wineWow64Packages.staging
       winetricks
 
       lutris
