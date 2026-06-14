@@ -158,9 +158,11 @@
         # libraries = with pkgs [ ];
       };
 
-      vim = {
+      neovim = {
         enable = true;
         defaultEditor = true;
+        viAlias = true;
+        vimAlias = true;
       };
 
       appimage = {
