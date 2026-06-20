@@ -1,17 +1,32 @@
-{ self, inputs, ... }: {
+{ self, config, inputs, ... }:
+
+let
+  host = {
+    name = "mikko5";
+    user.name = "mikko5";
+    state.version = "25.05";
+    system = "x86_64-linux";
+  };
+in
+{
   flake.nixosConfigurations.mikko5 = inputs.nixpkgs.lib.nixosSystem {
     modules = [
       self.nixosModules.mikko5Configuration
-
       inputs.yeetmouse.nixosModules.default
-
-      #self.nixosModules.minecraft
-      #self.nixosModules.obs-studio
-      #self.nixosModules.shellAlias
-      #self.nixosModules.tablet
-      #self.nixosModules.transcribe
-
-      #self.homeModules.ghostty
+      #config.flake.nixosModules.minecraft
+      #obs-studio
+      #shellAlias
+      #tablet
+      #transcribe
     ];
+  };
+
+  flake.modules.nixos.mikko5 = {
+    inherit host;
+    home-manager.users.${host.user.name} = {
+      imports = with config.flake.modules.homeManager; [
+        ghostty
+      ];
+    };
   };
 }

@@ -1,6 +1,5 @@
-{ self, inputs, ... }:
 {
-  flake.homeModules.ghostty = {
+  flake.flake.modules.homeManager.ghostty = {
     programs.ghostty = {
       enable = true;
     };
