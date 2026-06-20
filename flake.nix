@@ -33,14 +33,14 @@
         inputs.home-manager.flakeModules.home-manager
       ];
 
-      perSystem = { config, nixpkgs-unstable, system, ...}: {
+      perSystem = { system, ...}: {
         _module.args.pkgs = import inputs.nixpkgs {
           inherit system;
           config.allowUnfree = true;
 
           overlays = [
             (final: prev: {
-              unstable = import nixpkgs-unstable {
+              unstable = import inputs.nixpkgs-unstable {
                 inherit prev;
                 system = prev.system;
                 config.allowUnfree = true;
@@ -50,46 +50,4 @@
         };
       };
   };
-
-  # outputs = {
-  #   self,
-  #   nixpkgs,
-  #   nixpkgs-unstable,
-  #   home-manager,
-  #   yeetmouse,
-  #   ...
-  # } @ inputs: let
-  #   inherit (self) outputs;
-  #   lib = nixpkgs.lib;
-  #   system = "x86_64-linux";
-  # in {
-  #   nixosConfigurations.nixos = lib.nixosSystem {
-  #     inherit system;
-  #     specialArgs = {inherit inputs outputs;};
-  #     modules = [
-  #       {
-  #         nixpkgs.overlays = [
-  #           (final: prev: {
-  #             unstable = import nixpkgs-unstable {
-  #               inherit prev;
-  #               system = prev.system;
-  #               config.allowUnfree = true;
-  #             };
-  #           })
-  #         ];
-  #       }
-  #       ./configuration.nix
-
-  #       yeetmouse.nixosModules.default
-
-  #       home-manager.nixosModules.home-manager
-  #       {
-  #         home-manager.useGlobalPkgs = true;
-  #         home-manager.useUserPackages = true;
-
-  #         home-manager.users.mikko5 = import ./home.nix;
-  #       }
-  #     ];
-  #   };
-  # };
 }

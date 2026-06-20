@@ -1,23 +1,11 @@
 {self, inputs, ...}: {
-  flake.nixosModules.mikko5Configuration = { pkgs, lib, config, nixpkgs-unstable, ...}: {
+  flake.nixosModules.mikko5Configuration = { pkgs, lib, config, ...}: {
     imports = [
       self.nixosModules.mikko5Hardware
 
       self.nixosModules.yeetmouse
       # ../obs-studio.nix
       # ../retroarch.nix
-
-      {
-        nixpkgs.overlays = [
-          (final: prev: {
-            unstable = import nixpkgs-unstable {
-              inherit prev;
-              system = prev.system;
-              config.allowUnfree = true;
-            };
-          })
-        ];
-      }
     ];
 
     nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -223,7 +211,7 @@
       # projectplus
 
       discord
-      unstable.obsidian
+      #unstable.obsidian
 
       tidal-hifi
       musikcube
@@ -246,7 +234,7 @@
 
       freecad # env QT_QPA_PLATFORM=xcb (no longer needed, was a problem on 1.0.2)
 
-      unstable.archipelago
+      #unstable.archipelago
       poptracker
       r2modman
       owmods-gui # Launch with WEBKIT_DISABLE_COMPOSITING_MODE=1 https://github.com/ow-mods/ow-mod-man/issues/899#issuecomment-2608313165
