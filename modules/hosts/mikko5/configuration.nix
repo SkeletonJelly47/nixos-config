@@ -1,4 +1,4 @@
-{inputs, ...}: {
+{ self, inputs, ...}: {
   flake.nixosModules.mikkone5 = { pkgs, lib, config, ...}: {
 
     nix.settings.experimental-features = ["nix-command" "flakes"];
