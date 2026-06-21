@@ -6,6 +6,7 @@
       self.nixosModules.shellAlias
       self.nixosModules.yeetmouse
       self.nixosModules.fail2ban
+      self.nixosModules.bluetooth
     ];
   };
 }

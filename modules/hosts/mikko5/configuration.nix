@@ -55,15 +55,9 @@
       kernelPackages = pkgs.linuxPackages_6_18;
     };
 
-    hardware = {
-      bluetooth.enable = true;
-    };
-
     fonts.packages = with pkgs; [
       noto-fonts-cjk-sans
     ];
-
-    services.blueman.enable = true;
 
     # Enable sound with pipewire.
     services.pulseaudio.enable = false;
