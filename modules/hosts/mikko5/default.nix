@@ -8,6 +8,7 @@
       yeetmouse
       fail2ban
 
+      plasma6
       bluetooth
       audio
     ];

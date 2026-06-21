@@ -14,13 +14,6 @@
       }
     ];
 
-    services = {
-      # Enable the KDE Plasma Desktop Environment.
-      desktopManager.plasma6.enable = true;
-      displayManager.sddm.enable = true;
-      displayManager.sddm.wayland.enable = true;
-    };
-
     # Configure keymap in X11
     services.xserver.xkb = {
       layout = "fi";
