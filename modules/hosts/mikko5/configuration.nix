@@ -110,8 +110,6 @@
       discord
       #unstable.obsidian
 
-      kdePackages.kasts
-
       losslesscut-bin
       shotcut
 

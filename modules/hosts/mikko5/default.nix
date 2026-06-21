@@ -14,6 +14,7 @@
 
       games
       music
+      podcast
     ];
   };
 }
