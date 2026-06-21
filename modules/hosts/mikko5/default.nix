@@ -4,6 +4,7 @@
     modules = [
       self.nixosModules.mikkone5
       self.nixosModules.shellAlias
+      self.nixosModules.yeetmouse
     ];
   };
 }
