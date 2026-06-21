@@ -113,10 +113,6 @@
       losslesscut-bin
       shotcut
 
-      gimp
-      pinta
-      krita
-
       yt-dlp
       kdePackages.kcalc
       kdePackages.kclock

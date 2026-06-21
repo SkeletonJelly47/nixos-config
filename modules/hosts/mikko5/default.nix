@@ -17,6 +17,7 @@
       podcast
 
       tex
+      paint
     ];
   };
 }
