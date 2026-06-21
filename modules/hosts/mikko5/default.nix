@@ -14,11 +14,11 @@ in
       self.nixosModules.mikkone5
       inputs.yeetmouse.nixosModules.default
       self.nixosModules.yeetmouse
-      #config.flake.nixosModules.minecraft
-      #obs-studio
-      #shellAlias
-      #tablet
-      #transcribe
+      self.nixosModules.minecraft
+      self.nixosModules.obs-studio
+      self.nixosModules.shellAlias
+      self.nixosModules.tablet
+      self.nixosModules.transcribe
     ];
   };
 
