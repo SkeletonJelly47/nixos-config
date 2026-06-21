@@ -110,9 +110,6 @@
       discord
       #unstable.obsidian
 
-      tidal-hifi
-      musikcube
-      fooyin
       kdePackages.kasts
 
       losslesscut-bin
