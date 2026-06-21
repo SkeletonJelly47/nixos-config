@@ -3,6 +3,7 @@
   flake.nixosConfigurations.mikko5 = inputs.nixpkgs.lib.nixosSystem {
     modules =  with self.nixosModules; [
       mikkone5
+      user
       locale
       shellAlias
       yeetmouse
