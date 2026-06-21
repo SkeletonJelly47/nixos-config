@@ -110,9 +110,6 @@
       discord
       #unstable.obsidian
 
-      losslesscut-bin
-      shotcut
-
       yt-dlp
       kdePackages.kcalc
       kdePackages.kclock

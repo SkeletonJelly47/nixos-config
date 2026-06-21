@@ -18,6 +18,7 @@
 
       tex
       paint
+      videoedit
     ];
   };
 }
