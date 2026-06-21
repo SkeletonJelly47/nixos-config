@@ -11,6 +11,8 @@
       plasma6
       bluetooth
       audio
+
+      games
     ];
   };
 }
