@@ -30,7 +30,7 @@
 
       imports = [
         (inputs.import-tree ./modules)
-        inputs.home-manager.flakeModules.home-manager
+        #inputs.home-manager.flakeModules.home-manager
       ];
 
       perSystem = { system, ...}: {
