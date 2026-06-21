@@ -5,6 +5,7 @@
       self.nixosModules.mikkone5
       self.nixosModules.shellAlias
       self.nixosModules.yeetmouse
+      self.nixosModules.fail2ban
     ];
   };
 }
