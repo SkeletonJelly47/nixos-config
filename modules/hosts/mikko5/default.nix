@@ -13,6 +13,7 @@
       audio
 
       games
+      archipelago
       music
       podcast
 

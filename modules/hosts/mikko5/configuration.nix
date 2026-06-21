@@ -116,11 +116,6 @@
 
       freecad # env QT_QPA_PLATFORM=xcb (no longer needed, was a problem on 1.0.2)
 
-      #unstable.archipelago
-      poptracker
-      r2modman
-      owmods-gui # Launch with WEBKIT_DISABLE_COMPOSITING_MODE=1 https://github.com/ow-mods/ow-mod-man/issues/899#issuecomment-2608313165
-
       # env __GLX_VENDOR_LIBRARY_NAME=mesa __EGL_VENDOR_LIBRARY_FILENAMES=/run/opengl-driver/share/glvnd/egl_vendor.d/50_mesa.json MESA_LOADER_DRIVER_OVERRIDE=zink GALLIUM_DRIVER=zink WEBKIT_DISABLE_DMABUF_RENDERER=1
       # https://github.com/NixOS/nixpkgs/issues/345590#issuecomment-3904433594
       orca-slicer
