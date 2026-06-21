@@ -20,6 +20,7 @@
       tex
       paint
       videoedit
+      _3dprinting
     ];
   };
 }
