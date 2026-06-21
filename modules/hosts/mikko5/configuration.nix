@@ -1,9 +1,7 @@
-{self, inputs, ...}: {
-  flake.nixosModules.mikko5Configuration = { pkgs, lib, config, ...}: {
+{inputs, ...}: {
+  flake.nixosModules.mikkone5 = { pkgs, lib, config, ...}: {
     imports = [
-      self.nixosModules.mikko5Hardware
-
-      self.nixosModules.yeetmouse
+      #self.nixosModules.yeetmouse
       # ../obs-studio.nix
       # ../retroarch.nix
     ];
@@ -11,10 +9,7 @@
     nix.settings.experimental-features = ["nix-command" "flakes"];
     nix.settings.trusted-users = [ "root" "mikko5" ];
 
-    boot.loader.grub.enable = true;
-    boot.loader.grub.device = "nodev";
-    boot.loader.grub.useOSProber = true;
-    boot.loader.grub.efiSupport = true;
+    boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
 
     networking.hostName = "nixos"; # Define your hostname.

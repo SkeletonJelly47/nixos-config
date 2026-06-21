@@ -1,5 +1,5 @@
-{ self, inputs, ... }: {
-  flake.nixosModules.mikko5Hardware = { config, lib, modulesPath, ...}: {
+{
+  flake.nixosModules.mikkone5 = { config, lib, modulesPath, ...}: {
     imports = [
       (modulesPath + "/installer/scan/not-detected.nix")
     ];

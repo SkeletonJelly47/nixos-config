@@ -1,4 +1,4 @@
-{ self, config, inputs, ... }:
+{ config, self, inputs, ... }:
 
 let
   host = {
@@ -11,7 +11,7 @@ in
 {
   flake.nixosConfigurations.mikko5 = inputs.nixpkgs.lib.nixosSystem {
     modules = [
-      self.nixosModules.mikko5Configuration
+      self.nixosModules.mikkone5
       inputs.yeetmouse.nixosModules.default
       #config.flake.nixosModules.minecraft
       #obs-studio
