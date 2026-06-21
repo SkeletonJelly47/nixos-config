@@ -114,7 +114,6 @@
       kdePackages.kcalc
       kdePackages.kclock
 
-      jetbrains.rust-rover
       devenv
 
       linuxKernel.packages.linux_xanmod.cpupower
