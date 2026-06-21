@@ -15,6 +15,8 @@
       games
       music
       podcast
+
+      tex
     ];
   };
 }

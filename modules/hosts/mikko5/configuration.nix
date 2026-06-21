@@ -117,9 +117,6 @@
       pinta
       krita
 
-      texliveFull
-      texstudio
-
       yt-dlp
       kdePackages.kcalc
       kdePackages.kclock
