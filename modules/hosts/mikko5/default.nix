@@ -1,12 +1,13 @@
 { self, inputs, ... }:
 {
   flake.nixosConfigurations.mikko5 = inputs.nixpkgs.lib.nixosSystem {
-    modules = [
-      self.nixosModules.mikkone5
-      self.nixosModules.shellAlias
-      self.nixosModules.yeetmouse
-      self.nixosModules.fail2ban
-      self.nixosModules.bluetooth
+    modules =  with self.nixosModules; [
+      mikkone5
+      shellAlias
+      yeetmouse
+      fail2ban
+      bluetooth
+      audio
     ];
   };
 }
