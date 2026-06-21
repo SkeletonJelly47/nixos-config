@@ -7,12 +7,6 @@
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
 
-    networking.hostName = "nixos"; # Define your hostname.
-    # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-    # Enable networking
-    networking.networkmanager.enable = true;
-
     # Set your time zone.
     time.timeZone = "Europe/Helsinki";
 
@@ -275,23 +269,6 @@
     services.input-remapper = {
       enable = true;
       enableUdevRules = true;
-    };
-
-    # Enable the OpenSSH daemon.
-    services.openssh.enable = true;
-
-    networking.firewall = {
-      enable = true;
-
-      # Open ports in the firewall.
-      # allowedTCPPorts = [ ... ];
-      allowedUDPPortRanges = [
-        {
-          # BG3 Ports for direct connect
-          from = 23243;
-          to = 23262;
-        }
-      ];
     };
 
     services.fail2ban = {
