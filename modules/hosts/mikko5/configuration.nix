@@ -1,10 +1,5 @@
 {inputs, ...}: {
   flake.nixosModules.mikkone5 = { pkgs, lib, config, ...}: {
-    imports = [
-      #self.nixosModules.yeetmouse
-      # ../obs-studio.nix
-      # ../retroarch.nix
-    ];
 
     nix.settings.experimental-features = ["nix-command" "flakes"];
     nix.settings.trusted-users = [ "root" "mikko5" ];

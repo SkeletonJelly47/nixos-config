@@ -13,6 +13,7 @@ in
     modules = [
       self.nixosModules.mikkone5
       inputs.yeetmouse.nixosModules.default
+      self.nixosModules.yeetmouse
       #config.flake.nixosModules.minecraft
       #obs-studio
       #shellAlias
