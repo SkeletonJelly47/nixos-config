@@ -5,7 +5,6 @@
       mikkone5
       user
       locale
-      shellAlias
       yeetmouse
       fail2ban
 
@@ -23,6 +22,9 @@
       paint
       videoedit
       _3dprinting
+
+      shellAlias
+      nixvim
     ];
   };
 }

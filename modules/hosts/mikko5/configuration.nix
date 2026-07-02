@@ -43,13 +43,6 @@
         # libraries = with pkgs [ ];
       };
 
-      neovim = {
-        enable = true;
-        defaultEditor = true;
-        viAlias = true;
-        vimAlias = true;
-      };
-
       appimage = {
         enable = true;
         binfmt = true;
@@ -67,7 +60,6 @@
     environment.systemPackages = with pkgs; [
       git
       git-lfs
-      vim
       wget
       curl
       rustup
