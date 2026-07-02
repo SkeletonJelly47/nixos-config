@@ -9,6 +9,10 @@
         enable = true;
 
         servers = {
+          nixd = {
+            enable = true;
+          };
+
           zls = {
             enable = true;
           };
