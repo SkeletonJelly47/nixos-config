@@ -14,6 +14,7 @@
       audio
 
       games
+      obs-studio
       archipelago
       music
       podcast
