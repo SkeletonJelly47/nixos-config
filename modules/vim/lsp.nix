@@ -21,7 +21,7 @@
         };
 
         zls = {
-            enable = true;
+          enable = true;
         };
       };
     };
@@ -38,6 +38,7 @@
           { name = "nvim_lsp"; }
           { name = "path"; }
           { name = "buffer"; }
+          { name = "cmdline"; }
         ];
       };
     };
