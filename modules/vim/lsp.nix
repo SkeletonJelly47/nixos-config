@@ -41,6 +41,8 @@
           { name = "cmdline"; }
         ];
       };
+
+      telescope.enable = true;
     };
   };
 }
