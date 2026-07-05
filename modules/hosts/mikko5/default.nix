@@ -25,6 +25,7 @@
 
       shellAlias
       nixvim
+      fonts
     ];
   };
 }

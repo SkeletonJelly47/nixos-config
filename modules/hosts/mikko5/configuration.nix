@@ -30,10 +30,6 @@
       kernelPackages = pkgs.linuxPackages_6_18;
     };
 
-    fonts.packages = with pkgs; [
-      noto-fonts-cjk-sans
-    ];
-
     # Enable touchpad support (enabled default in most desktopManager).
     # services.xserver.libinput.enable = true;
 
