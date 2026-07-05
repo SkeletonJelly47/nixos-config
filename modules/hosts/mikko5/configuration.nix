@@ -65,6 +65,7 @@
       rustup
       gcc
       ripgrep
+      fd
       btop
       gparted
 
