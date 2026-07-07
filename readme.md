@@ -1,5 +1,5 @@
 # TODO
-- [ ] `nh`
+- [x] `nh`
 - [ ] juiced up terminal (ghostty? kitty? alacritty? fish?)
 - [ ] niri? hyprland? just something else than plasma xd
 - [x] Flake parts initial setup
