@@ -24,7 +24,7 @@
       _3dprinting
 
       shellAlias
-      nixvim
+      nvim
       lazygit
       fonts
     ];

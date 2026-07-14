@@ -20,10 +20,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixvim.url = "github:nix-community/nixvim";
-
     # My standalone nixvim
-    nixvim-config.url = "github:SkeletonJelly47/nixvim-config";
+    nvim-flake.url = "github:SkeletonJelly47/nvim-flake";
   };
 
   outputs =
