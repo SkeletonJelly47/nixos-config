@@ -72,6 +72,7 @@
       alejandra
       nvd
       nh
+      cachix
 
       (vscode-with-extensions.override {
         vscodeExtensions = with vscode-extensions; [
