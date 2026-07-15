@@ -1,7 +1,10 @@
-{ self, inputs, ... }:
 {
+  self,
+  inputs,
+  ...
+}: {
   flake.nixosConfigurations.mikko5 = inputs.nixpkgs.lib.nixosSystem {
-    modules =  with self.nixosModules; [
+    modules = with self.nixosModules; [
       mikkone5
       user
       locale
@@ -13,6 +16,7 @@
       audio
 
       games
+      retroarch
       obs-studio
       archipelago
       music
