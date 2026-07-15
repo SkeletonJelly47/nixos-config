@@ -186,11 +186,11 @@
         "nvf": "nvf"
       },
       "locked": {
-        "lastModified": 1784062307,
-        "narHash": "sha256-FIzaRdpaMTjmJRx6Gwl3LKAejiX08pGAgRJn6qxvMu4=",
+        "lastModified": 1784121078,
+        "narHash": "sha256-meOQTG85gMYdJcf8Cg+q7TeiwR8frjl5v7EKVwgevaM=",
         "owner": "SkeletonJelly47",
         "repo": "nvim-flake",
-        "rev": "02c178af5585d8a57c48ce8dd62c32e89f5bdcea",
+        "rev": "2458aeb961cd37880366130456dc382924c6ef32",
         "type": "github"
       },
       "original": {
