@@ -1,8 +1,11 @@
-{ self, inputs, ...}: {
-  flake.nixosModules.mikkone5 = { pkgs, ...}: {
-
+{
+  self,
+  inputs,
+  ...
+}: {
+  flake.nixosModules.mikkone5 = {pkgs, ...}: {
     nix.settings.experimental-features = ["nix-command" "flakes"];
-    nix.settings.trusted-users = [ "root" "mikko5" ];
+    nix.settings.trusted-users = ["root" "mikko5"];
 
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
@@ -73,12 +76,6 @@
       nvd
       nh
       cachix
-
-      (vscode-with-extensions.override {
-        vscodeExtensions = with vscode-extensions; [
-          jnoortheen.nix-ide
-        ];
-      })
 
       ungoogled-chromium
       firefox
