@@ -26,6 +26,7 @@
       paint
       videoedit
       _3dprinting
+      audacity
 
       shellAlias
       nvim
