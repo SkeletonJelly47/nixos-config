@@ -27,6 +27,7 @@
       videoedit
       _3dprinting
       audacity
+      obsidian
 
       shellAlias
       nvim
