@@ -5,6 +5,7 @@
       (retroarch.withCores (cores:
         with cores; [
           dolphin
+          snes9x
         ]))
     ];
   };
