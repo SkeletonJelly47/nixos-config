@@ -24,6 +24,7 @@
 
       tex
       paint
+      tablet
       videoedit
       _3dprinting
       audacity
