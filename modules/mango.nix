@@ -11,8 +11,8 @@
     awww.url = "git+https://codeberg.org/LGFae/awww";
   };
 
-  den.aspects.mango = {
-    nixos = {
+  den.aspects.mango = {host, ...}: {
+    nixos = {pkgs, ...}: {
       imports = [inputs.mangowm.nixosModules.mango];
       programs.mango.enable = true;
 
@@ -30,12 +30,22 @@
         NIXOS_OZONE_WL = "1";
         WLR_RENDERER_ALLOW_SOFTWARE = "1";
       };
+
+      environment.systemPackages = [
+        pkgs.rofi
+        pkgs.waybar
+        inputs.awww.packages.${host.system}.awww
+        pkgs.swaynotificationcenter
+      ];
+
+      xdg.portal = {
+        enable = true;
+        wlr.enable = true;
+      };
     };
 
     provides.to-users.hjem = {
-      files.".config/mango/config.conf".text = ''
-        bind=SUPER,m,quit
-      '';
+      files.".config/mango".source = ./mango;
     };
   };
 
