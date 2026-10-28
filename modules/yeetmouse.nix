@@ -1,13 +1,13 @@
 { den, inputs, ... }:
 {
-  den.aspects.yeetmouse = {
-    flake-file.inputs = {
-      yeetmouse = {
-        url = "github:AndyFilter/YeetMouse?dir=nix";
-        inputs.nixpkgs.follows = "nixpkgs";
-      };
+  flake-file.inputs = {
+    yeetmouse = {
+      url = "github:AndyFilter/YeetMouse?dir=nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
+  };
 
+  den.aspects.yeetmouse = {
     nixos = {
       imports = [ inputs.yeetmouse.nixosModules.default ];
 
