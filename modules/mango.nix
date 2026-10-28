@@ -8,6 +8,7 @@
       url = "github:mangowm/mango";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
+    awww.url = "git+https://codeberg.org/LGFae/awww";
   };
 
   den.aspects.mango = {
