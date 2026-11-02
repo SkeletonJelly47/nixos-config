@@ -49,5 +49,5 @@
     };
   };
 
-  den.schema.host.includes = [den.aspects.mango, den.aspects.fonts];
+  den.schema.host.includes = [den.aspects.mango den.aspects.fonts];
 }
