@@ -46,6 +46,7 @@
 
     provides.to-users.hjem = {
       files.".config/mango".source = ./mango;
+      files.".config/waybar".source = ./waybar;
     };
   };
 
