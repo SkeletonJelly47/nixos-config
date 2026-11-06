@@ -16,6 +16,7 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
     import-tree.url = "github:denful/import-tree";
+    mangobar.url = "github:mangowm/mangobar";
     mangowm = {
       url = "github:mangowm/mango";
       inputs.nixpkgs.follows = "nixpkgs-unstable";

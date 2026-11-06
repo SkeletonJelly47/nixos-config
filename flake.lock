@@ -177,6 +177,24 @@
         "type": "github"
       }
     },
+    "mangobar": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1793751277,
+        "narHash": "sha256-Nod3JUwnQ3zWRIjNf05xa5OAgBCOQbgBRyPS2mbIk4A=",
+        "owner": "mangowm",
+        "repo": "mangobar",
+        "rev": "2b79fcb956cce8d80c0ece997e0e2aa2b02b71c1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mangowm",
+        "repo": "mangobar",
+        "type": "github"
+      }
+    },
     "mangowm": {
       "inputs": {
         "flake-parts": "flake-parts_2",
@@ -263,6 +281,22 @@
     },
     "nixpkgs_2": {
       "locked": {
+        "lastModified": 1786599213,
+        "narHash": "sha256-yNJd40f11EzXBjSByCB7IPpeFFAdeoSKKM67dGkfFoU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "0e251e24a4f24e036a084b6b4b2d2491af4167f4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
         "lastModified": 1790635395,
         "narHash": "sha256-bNyvoIyOCu7lzoCpWKWGIsHpTtERUWzqYWFPlN++WTw=",
         "owner": "nixos",
@@ -277,7 +311,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
+    "nixpkgs_4": {
       "locked": {
         "lastModified": 1783224372,
         "narHash": "sha256-8i/87eeoqiGE4yOTjwSA3Eh/ziJRQEmd/unYU+K27sk=",
@@ -293,7 +327,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
+    "nixpkgs_5": {
       "locked": {
         "lastModified": 1783148766,
         "narHash": "sha256-H9+N+GFtsbVC8ZniHliChM7ndizxtqVZs6bnGOLM3WQ=",
@@ -310,7 +344,7 @@
       "inputs": {
         "flake-compat": "flake-compat_2",
         "mnw": "mnw",
-        "nixpkgs": "nixpkgs_4"
+        "nixpkgs": "nixpkgs_5"
       },
       "locked": {
         "lastModified": 1783551490,
@@ -328,7 +362,7 @@
     },
     "nvim-flake": {
       "inputs": {
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_4",
         "nvf": "nvf"
       },
       "locked": {
@@ -353,8 +387,9 @@
         "flake-parts": "flake-parts",
         "hjem": "hjem",
         "import-tree": "import-tree",
+        "mangobar": "mangobar",
         "mangowm": "mangowm",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs_3",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "nvim-flake": "nvim-flake",
         "yeetmouse": "yeetmouse"

@@ -9,6 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
     awww.url = "git+https://codeberg.org/LGFae/awww";
+    mangobar.url = "github:mangowm/mangobar";
   };
 
   den.aspects.mango = {host, ...}: {
@@ -33,8 +34,8 @@
 
       environment.systemPackages = [
         pkgs.rofi
-        pkgs.waybar
         inputs.awww.packages.${host.system}.awww
+        inputs.mangobar.packages.${host.system}.default
         pkgs.swaynotificationcenter
       ];
 
@@ -46,7 +47,7 @@
 
     provides.to-users.hjem = {
       files.".config/mango".source = ./mango;
-      files.".config/waybar".source = ./waybar;
+      files.".config/mangobar".source = ./mangobar;
     };
   };
 
