@@ -1,5 +1,5 @@
 {den, ...}: {
-  den.aspects.keymap.os = {
+  den.default.nixos = {
     services.xserver.xkb = {
       layout = "fi";
       variant = "";
@@ -7,6 +7,4 @@
 
     console.keyMap = "fi";
   };
-
-  den.schema.host.includes = [den.aspects.keymap];
 }
