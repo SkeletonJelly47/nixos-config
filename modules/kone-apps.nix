@@ -9,5 +9,6 @@
     <obs-studio>
     <music>
     <lazygit>
+    <games>
   ];
 }

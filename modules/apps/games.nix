@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.games = { pkgs, ... }: {
+  den.aspects.games.nixos = {pkgs, ...}: {
     programs = {
       gamemode.enable = true;
 
