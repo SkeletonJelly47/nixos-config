@@ -6,5 +6,6 @@
   den.aspects.kone.includes = [
     <kitty>
     <my-nvim>
+    <obs-studio>
   ];
 }
