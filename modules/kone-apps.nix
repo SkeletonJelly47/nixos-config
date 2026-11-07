@@ -7,5 +7,6 @@
     <kitty>
     <my-nvim>
     <obs-studio>
+    <music>
   ];
 }
