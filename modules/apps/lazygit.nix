@@ -1,6 +1,5 @@
-{ self, inputs, ... }:
 {
-  flake.nixosModules.lazygit = {
+  den.aspects.lazygit.nixos = {
     programs.lazygit = {
       enable = true;
 
@@ -10,8 +9,8 @@
             quit = "Q";
           };
         };
-      # TODO: os: shellFunctionsFile: from where?
-      # https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#using-aliases-or-functions-in-shell-commands
+        # TODO: os: shellFunctionsFile: from where?
+        # https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#using-aliases-or-functions-in-shell-commands
       };
     };
 

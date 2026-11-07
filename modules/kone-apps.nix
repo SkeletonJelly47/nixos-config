@@ -8,5 +8,6 @@
     <my-nvim>
     <obs-studio>
     <music>
+    <lazygit>
   ];
 }
