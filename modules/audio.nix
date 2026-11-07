@@ -1,5 +1,9 @@
-{
-  flake.nixosModules.audio = { pkgs, lib, ... }: {
+{den, ...}: {
+  den.aspects.audio.nixos = {
+    pkgs,
+    lib,
+    ...
+  }: {
     services.pulseaudio.enable = false;
     security.rtkit.enable = true;
     services.pipewire = {
@@ -16,8 +20,7 @@
     ];
 
     # LSP-Plugins workaround(?) https://discourse.nixos.org/t/lmms-vst-plugins/42985/3
-    environment.variables =
-    let
+    environment.variables = let
       makePluginPath = format:
         (lib.makeSearchPath format [
           "$HOME/.nix-profile/lib"
@@ -34,4 +37,6 @@
       VST3_PATH = makePluginPath "vst3";
     };
   };
+
+  den.aspects.kone.includes = [den.aspects.audio];
 }
