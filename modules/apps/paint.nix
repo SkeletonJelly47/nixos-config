@@ -9,6 +9,7 @@
       gimp
       pinta
       krita
+      drawpile
     ];
   };
 }
