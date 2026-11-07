@@ -1,12 +1,12 @@
-{ self, inputs, ... }:
-{
-  flake.nixosModules.shellAlias = {
-    environment.shellAliases =
-    {
+{den, ...}: {
+  den.aspects.shell-alias.nixos = {
+    environment.shellAliases = {
       nrb = "sudo nixos-rebuild switch --flake .#mikko5 && nvd diff $(ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 2)";
       ned = "(cd /home/mikko5/nixos-config && nvim .)";
       cdc = "cd /home/mikko5/nixos-config";
       sperf = "sudo cpupower frequency-set -g performance";
     };
   };
+
+  den.aspects.kone.includes = [den.aspects.shell-alias];
 }
