@@ -14,5 +14,6 @@
     <archipelago>
     <obsidian>
     <paint>
+    <tex>
   ];
 }
