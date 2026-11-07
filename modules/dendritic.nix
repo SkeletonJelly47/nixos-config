@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  den,
+  inputs,
+  ...
+}: {
   imports = [
     (inputs.flake-file.flakeModules.dendritic or {})
     (inputs.den.flakeModules.dendritic or {})
@@ -9,4 +13,7 @@
     den.url = "github:denful/den";
     flake-file.url = "github:vic/flake-file";
   };
+
+  # enable angle bracket syntax
+  _module.args.__findFile = den.lib.__findFile;
 }

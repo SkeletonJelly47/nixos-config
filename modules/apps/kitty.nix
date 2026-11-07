@@ -10,6 +10,4 @@
       font_size 20
     '';
   };
-
-  den.aspects.mikko5.includes = [den.aspects.kitty];
 }
