@@ -16,5 +16,6 @@
     <paint>
     <tex>
     <podcast>
+    <videoedit>
   ];
 }
