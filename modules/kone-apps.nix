@@ -11,5 +11,6 @@
     <lazygit>
     <games>
     <archipelago>
+    <obsidian>
   ];
 }
