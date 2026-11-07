@@ -10,5 +10,6 @@
     <music>
     <lazygit>
     <games>
+    <archipelago>
   ];
 }

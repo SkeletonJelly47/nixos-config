@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.archipelago = { pkgs, ... }: {
+  den.aspects.archipelago.nixos = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [
       archipelago
       poptracker
