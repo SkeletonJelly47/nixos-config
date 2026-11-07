@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.audacity = {pkgs, ...}: {
+  den.aspects.audacity.nixos = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [audacity];
   };
 }

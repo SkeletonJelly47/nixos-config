@@ -18,5 +18,6 @@
     <podcast>
     <videoedit>
     <_3dprinting>
+    <audacity>
   ];
 }
