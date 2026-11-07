@@ -12,5 +12,6 @@
     <games>
     <archipelago>
     <obsidian>
+    <paint>
   ];
 }
