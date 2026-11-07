@@ -15,5 +15,6 @@
     <obsidian>
     <paint>
     <tex>
+    <podcast>
   ];
 }

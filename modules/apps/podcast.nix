@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.podcast = { pkgs, ... }: {
+  den.aspects.podcast = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [
       kdePackages.kasts
     ];
