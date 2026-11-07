@@ -6,7 +6,7 @@
       ];
     };
 
-    hjem.files.".config/kitty/kitty.conf".text = ''
+    provides.to-users.hjem.files.".config/kitty/kitty.conf".text = ''
       font_size 20
     '';
   };
