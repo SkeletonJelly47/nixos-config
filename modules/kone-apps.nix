@@ -17,5 +17,6 @@
     <tex>
     <podcast>
     <videoedit>
+    <_3dprinting>
   ];
 }
