@@ -10,6 +10,7 @@
     <music>
     <lazygit>
     <games>
+    <retroarch>
     <archipelago>
     <obsidian>
     <paint>

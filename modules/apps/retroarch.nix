@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.retroarch = {pkgs, ...}: {
+  den.aspects.retroarch.nixos = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [
       retroarch-assets
       (retroarch.withCores (cores:
