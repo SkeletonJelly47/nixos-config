@@ -52,5 +52,6 @@
     };
   };
 
-  den.schema.host.includes = [den.aspects.mango den.aspects.fonts];
+  # todo: figure out aspect selection for WMs
+  # den.schema.host.includes = [den.aspects.mango den.aspects.fonts];
 }

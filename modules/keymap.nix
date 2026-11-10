@@ -2,7 +2,7 @@
   den.default.nixos = {
     services.xserver.xkb = {
       layout = "fi";
-      variant = "";
+      variant = "nodeadkeys";
     };
 
     console.keyMap = "fi";
