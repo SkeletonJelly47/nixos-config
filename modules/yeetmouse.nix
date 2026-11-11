@@ -1,5 +1,8 @@
-{ den, inputs, ... }:
 {
+  den,
+  inputs,
+  ...
+}: {
   flake-file.inputs = {
     yeetmouse = {
       url = "github:AndyFilter/YeetMouse?dir=nix";
@@ -9,7 +12,7 @@
 
   den.aspects.yeetmouse = {
     nixos = {
-      imports = [ inputs.yeetmouse.nixosModules.default ];
+      imports = [inputs.yeetmouse.nixosModules.default];
 
       hardware.yeetmouse = {
         enable = true;
@@ -21,6 +24,7 @@
         #   y = 1.4;
         # };
         # TODO: Anisotropy, 1.4x Y multiplier
+        # Apparently its 'RatioYX': https://github.com/AndyFilter/YeetMouse/blob/master/nix/module.nix#L483
         mode.classic = {
           acceleration = 0.033;
           exponent = 3.36;
@@ -29,6 +33,4 @@
       };
     };
   };
-
-  den.schema.host.includes = [den.aspects.yeetmouse];
 }

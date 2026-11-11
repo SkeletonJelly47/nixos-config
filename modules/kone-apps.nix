@@ -10,6 +10,7 @@
     <music>
     <lazygit>
     <games>
+    <yeetmouse>
     <bg3>
     <retroarch>
     <archipelago>
