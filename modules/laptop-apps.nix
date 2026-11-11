@@ -13,5 +13,6 @@
     # <games>
     # <retroarch>
     <obsidian>
+    <shell-alias>
   ];
 }

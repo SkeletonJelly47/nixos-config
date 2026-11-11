@@ -5,6 +5,7 @@
 }: {
   den.aspects.kone.includes = [
     <kitty>
+    <shell-alias>
     <my-nvim>
     <obs-studio>
     <music>
