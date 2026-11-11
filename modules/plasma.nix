@@ -1,4 +1,4 @@
-{
+{den, ...}: {
   den.aspects.plasma = {host, ...}: {
     nixos = {
       services = {
@@ -9,5 +9,7 @@
     };
 
     environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
+    includes = [den.aspects.fonts];
   };
 }
