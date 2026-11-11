@@ -50,8 +50,7 @@
       files.".config/mango".source = ./mango;
       files.".config/mangobar".source = ./mangobar;
     };
-  };
 
-  # todo: figure out aspect selection for WMs
-  # den.schema.host.includes = [den.aspects.mango den.aspects.fonts];
+    includes = [den.aspects.fonts];
+  };
 }

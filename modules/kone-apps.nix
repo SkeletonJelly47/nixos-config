@@ -4,6 +4,7 @@
   ...
 }: {
   den.aspects.kone.includes = [
+    <mango>
     <kitty>
     <shell-alias>
     <my-nvim>
