@@ -39,6 +39,7 @@
         pkgs.swaynotificationcenter
       ];
 
+      # https://discourse.nixos.org/t/obs-studio-cannot-select-on-screen-capture-pipewire/81080/2
       xdg.portal = {
         enable = true;
         wlr.enable = true;
