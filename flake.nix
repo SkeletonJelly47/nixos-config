@@ -21,6 +21,7 @@
       url = "github:mangowm/mango";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
+    nh.url = "github:nix-community/nh";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nvim-flake.url = "github:SkeletonJelly47/nvim-flake";
