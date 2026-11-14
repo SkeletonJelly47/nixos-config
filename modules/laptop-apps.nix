@@ -10,7 +10,7 @@
     # <obs-studio>
     # <music>
     <lazygit>
-    # <games>
+    <games/steam>
     # <retroarch>
     <obsidian>
     <shell-alias>

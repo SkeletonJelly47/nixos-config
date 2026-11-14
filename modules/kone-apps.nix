@@ -11,7 +11,8 @@
     <obs-studio>
     <music>
     <lazygit>
-    <games>
+    <games/steam>
+    <games/non-steam>
     <yeetmouse>
     <bg3>
     <retroarch>
