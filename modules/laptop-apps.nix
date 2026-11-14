@@ -8,7 +8,7 @@
     <kitty>
     <my-nvim>
     # <obs-studio>
-    # <music>
+    # <music/streaming>
     <lazygit>
     <games/steam>
     # <retroarch>

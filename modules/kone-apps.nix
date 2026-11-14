@@ -9,7 +9,8 @@
     <shell-alias>
     <my-nvim>
     <obs-studio>
-    <music>
+    <music/streaming>
+    <music/local>
     <lazygit>
     <games/steam>
     <games/non-steam>
