@@ -11,6 +11,7 @@
     # <music/streaming>
     <lazygit>
     <games/steam>
+    <games/small>
     # <retroarch>
     <obsidian>
     <shell-alias>

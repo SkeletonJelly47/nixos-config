@@ -14,6 +14,7 @@
     <lazygit>
     <games/steam>
     <games/non-steam>
+    <games/small>
     <yeetmouse>
     <bg3>
     <retroarch>

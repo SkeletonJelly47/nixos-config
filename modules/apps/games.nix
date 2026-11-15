@@ -29,5 +29,14 @@
         ];
       };
     };
+
+    small.nixos = {pkgs, ...}: {
+      environment.systemPackages = with pkgs; [
+        kdePackages.kmahjongg
+        kdePackages.kpat
+        kdePackages.ksudoku
+        kdePackages.kmines
+      ];
+    };
   };
 }
