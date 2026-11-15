@@ -10,6 +10,7 @@
       environment.systemPackages = with pkgs; [
         tidal-dl
         unstable.fooyin
+        amarok
       ];
     };
   };
