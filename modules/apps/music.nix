@@ -11,6 +11,7 @@
         tidal-dl
         unstable.fooyin
         amarok
+        kdePackages.audex
       ];
     };
   };
