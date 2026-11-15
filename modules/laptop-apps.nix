@@ -15,5 +15,6 @@
     <obsidian>
     <shell-alias>
     <bluetooth>
+    <paint/krita>
   ];
 }

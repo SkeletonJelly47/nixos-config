@@ -19,7 +19,7 @@
     <retroarch>
     <archipelago>
     <obsidian>
-    <paint>
+    <paint/_>
     <tex>
     <podcast>
     <videoedit>

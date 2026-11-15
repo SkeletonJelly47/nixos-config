@@ -1,15 +1,27 @@
-{
-  den.aspects.paint.nixos = {pkgs, ...}: {
-    hardware.opentabletdriver.enable = true;
+{den, ...}: {
+  den.aspects.paint = {
+    krita = {
+      nixos = {pkgs, ...}: {
+        environment.systemPackages = with pkgs; [
+          krita
+        ];
+      };
+      includes = [den.aspects.opentabletdriver];
+    };
 
-    hardware.uinput.enable = true;
-    boot.kernelModules = ["uinput"];
+    drawpile = {
+      nixos = {pkgs, ...}: {
+        environment.systemPackages = with pkgs; [
+          drawpile
+        ];
+      };
+      includes = [den.aspects.opentabletdriver];
+    };
 
-    environment.systemPackages = with pkgs; [
-      gimp
-      pinta
-      krita
-      drawpile
-    ];
+    pinta.nixos = {pkgs, ...}: {
+      environment.systemPackages = with pkgs; [
+        pinta
+      ];
+    };
   };
 }
