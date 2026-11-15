@@ -6,6 +6,4 @@
 
     services.blueman.enable = true;
   };
-
-  den.aspects.kone.includes = [den.aspects.bluetooth];
 }

@@ -25,5 +25,6 @@
     <videoedit>
     <_3dprinting>
     <audacity>
+    <bluetooth>
   ];
 }

@@ -14,5 +14,6 @@
     # <retroarch>
     <obsidian>
     <shell-alias>
+    <bluetooth>
   ];
 }
