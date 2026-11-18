@@ -7,6 +7,8 @@ A flake based NixOS configuration using ~~`flake-parts`~~ `den`.
 
 ## TODO
 
+- [ ] Krita preferences / dotfiles `.local/share/krita/shortcuts`
+      [keep it editable?](https://github.com/feel-co/hjem/issues/113#issuecomment-3959359191)
 - [ ] cool color scheme
 - [ ] pipewire automatic signal chain for microphone
 - [ ] Chromium bookmarks
