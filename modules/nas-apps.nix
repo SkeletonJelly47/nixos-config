@@ -1,0 +1,31 @@
+{
+  den,
+  __findFile,
+  ...
+}: {
+  den.aspects.kone.includes = [
+    <plasma>
+    <kitty>
+    <shell-alias>
+    <my-nvim>
+    <obs-studio>
+    <music/streaming>
+    <music/local>
+    <lazygit>
+    <games/steam>
+    <games/non-steam>
+    <games/small>
+    <yeetmouse>
+    <bg3>
+    <retroarch>
+    <archipelago>
+    <obsidian>
+    <paint/_>
+    <tex>
+    <podcast>
+    <videoedit>
+    <_3dprinting>
+    <audacity>
+    <bluetooth>
+  ];
+}
