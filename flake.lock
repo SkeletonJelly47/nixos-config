@@ -495,17 +495,17 @@
       "locked": {
         "dir": "nix",
         "lastModified": 1795284215,
-        "narHash": "sha256-o7fPlUlQCOFzKO5iF5lssFHc3fQmcfJJCpcttt7e4JI=",
-        "owner": "AndyFilter",
+        "narHash": "sha256-v4Kd3/457Gq7ZzRMik9jd4L1jqDMxcVO51j76kF6ed8=",
+        "owner": "SkeletonJelly47",
         "repo": "YeetMouse",
-        "rev": "99ce851cdbce82ee09dca8dcd10c408ec3fcd7c1",
+        "rev": "26311fcaf3b7db1e35ddd2721171b90b13f33f9a",
         "type": "github"
       },
       "original": {
         "dir": "nix",
-        "owner": "AndyFilter",
+        "owner": "SkeletonJelly47",
         "repo": "YeetMouse",
-        "rev": "99ce851cdbce82ee09dca8dcd10c408ec3fcd7c1",
+        "rev": "26311fcaf3b7db1e35ddd2721171b90b13f33f9a",
         "type": "github"
       }
     }
