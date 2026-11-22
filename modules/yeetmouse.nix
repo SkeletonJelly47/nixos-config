@@ -25,8 +25,6 @@
           ratioYX = 1.4;
         };
 
-        # TODO: Anisotropy, 1.4x Y multiplier
-        # Apparently its 'ratioYX': https://github.com/AndyFilter/YeetMouse/blob/master/nix/module.nix#L483
         mode.classic = {
           acceleration = 0.033;
           exponent = 3.36;
