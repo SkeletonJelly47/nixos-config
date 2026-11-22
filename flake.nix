@@ -26,7 +26,7 @@
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nvim-flake.url = "github:SkeletonJelly47/nvim-flake";
     yeetmouse = {
-      url = "github:AndyFilter/YeetMouse?dir=nix";
+      url = "github:AndyFilter/YeetMouse/99ce851cdbce82ee09dca8dcd10c408ec3fcd7c1?dir=nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
