@@ -5,6 +5,7 @@
       nrb = "sudo nixos-rebuild boot --flake .#${host.name} && nvd diff $(ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 2)";
       nrt = "sudo nixos-rebuild test --flake .#${host.name}";
       cdc = "cd /home/mikko5/nixos-config";
+      # todo: move to own aspect alongside cpucpower package
       sperf = "sudo cpupower frequency-set -g performance";
     };
   };
