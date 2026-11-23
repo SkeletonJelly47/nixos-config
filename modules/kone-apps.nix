@@ -27,5 +27,6 @@
     <_3dprinting>
     <audacity>
     <bluetooth>
+    <docker>
   ];
 }
